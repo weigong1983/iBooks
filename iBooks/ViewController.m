@@ -24,25 +24,26 @@
 
 #pragma mark -
 #pragma mark Actions
-// 直接预览： 备注：【iOS暂时不支持直接预览iBooks文件】
-- (IBAction)previewDocument:(id)sender {
-    NSURL *URL = [[NSBundle mainBundle] URLForResource:@"sample" withExtension:@"ibooks"];
-    
-    if (URL) {
-        // Initialize Document Interaction Controller
-        self.documentInteractionController = [UIDocumentInteractionController interactionControllerWithURL:URL];
-        
-        // Configure Document Interaction Controller
-        [self.documentInteractionController setDelegate:self];
-        
-        // Preview PDF
-        [self.documentInteractionController presentPreviewAnimated:YES];
-        
-    }
-}
+//// 直接预览： 备注：【iOS暂时不支持直接预览iBooks文件】
+//- (IBAction)previewDocument:(id)sender {
+//    NSURL *URL = [[NSBundle mainBundle] URLForResource:@"sample" withExtension:@"ibooks"];
+//    
+//    if (URL) {
+//        // Initialize Document Interaction Controller
+//        self.documentInteractionController = [UIDocumentInteractionController interactionControllerWithURL:URL];
+//        
+//        // Configure Document Interaction Controller
+//        [self.documentInteractionController setDelegate:self];
+//        
+//        // Preview PDF
+//        [self.documentInteractionController presentPreviewAnimated:YES];
+//        
+//    }
+//}
 
 // 打开文件，选择支持的程序
-- (IBAction)openDocument:(id)sender {
+- (IBAction)openDocument:(id)sender
+{
     UIButton *button = (UIButton *)sender;
     // 测试一： 打开【sample.ibooks】本地测试文件
     NSURL *URL = [[NSBundle mainBundle] URLForResource:@"sample" withExtension:@"ibooks"];
