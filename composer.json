@@ -1,7 +1,6 @@
 
-
 {
-  "name": "mkdev/app-wx",
+  "name": "github/app-wx",
   "description": "mikuang smart user client",
   "keywords": ["mikuang","weixin"],
   "homepage": "http://haiqiyu.com",
