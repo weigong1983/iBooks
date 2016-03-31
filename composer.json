@@ -1,0 +1,21 @@
+
+
+{
+  "name": "app-wx",
+  "description": "mikuang smart user client",
+  "keywords": ["mikuang","weixin"],
+  "homepage": "http://haiqiyu.com",
+  "version": "1.0.0",
+  "license": "mkmart",
+  "authors": [
+    {
+      "name": "gitlab",
+      "email": "gitlab@anydian.com",
+      "homepage": "http://haiqiyu.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0"
+  }
+}
+
